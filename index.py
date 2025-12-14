@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route("/")
 def home():
@@ -17,5 +17,5 @@ def add():
     b = data.get("b", 0)
     return jsonify({"result": a + b})
 
-if name == "main":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
