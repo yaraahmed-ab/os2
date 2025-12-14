@@ -4,6 +4,7 @@ WORKDIR /app
 
 COPY index.py .
 
-RUN pip install 
+
+RUN pip install --no-cache-dir flask
 
 CMD ["python", "index.py"]
