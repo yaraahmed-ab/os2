@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY index.py .
 
+RUN pip install 
+
 CMD ["python", "index.py"]
