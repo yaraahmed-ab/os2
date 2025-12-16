@@ -16,7 +16,7 @@ jobs:
       - name: Build imag
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/yara2023040277:latest .
-      - name: Push image
+      - name: Push imag
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/yara2023040277:latest
       - name: Run container
